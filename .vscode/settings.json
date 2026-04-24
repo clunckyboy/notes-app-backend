@@ -1,0 +1,34 @@
+{
+
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.eol": "\n",
+
+    "editor.detectIndentation": false,
+
+    // Mengaktifkan ESLint sebagai pemformat utama
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    
+    // Menjalankan perbaikan otomatis saat file disimpan
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+  
+    // Opsional: Jika Anda ingin mematikan formatter lain (seperti Prettier) 
+    // agar tidak bentrok dengan ESLint di project ini
+    "editor.formatOnSave": false,
+  
+    // Memastikan VS Code mengenali Flat Config (eslint.config.js)
+    "eslint.useFlatConfig": true,
+    
+    // Menentukan kapan ESLint harus berjalan
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+  }
